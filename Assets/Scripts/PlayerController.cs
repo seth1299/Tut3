@@ -35,8 +35,12 @@ public class PlayerController : MonoBehaviour
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
             audioSource.Play();
         }
-        
+            
+    }
 
+    public void DestroyPlayer()
+    {
+        Destroy(this);
     }
 
     void FixedUpdate()
